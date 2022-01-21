@@ -38,7 +38,9 @@
 
 #include "SensirionI2CSgp40.h"
 #include "Arduino.h"
+#ifndef SL_LIB_INCLUDE_SENSIRION_CORE
 #include "SensirionCore.h"
+#endif
 #include <Wire.h>
 
 #define SGP40_I2C_ADDRESS 0x59
